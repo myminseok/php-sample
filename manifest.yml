@@ -5,15 +5,5 @@ applications:
   memory: 256m
   path: .
   routes:
-  #- route: https://php1.cfapps.haas-224.pez.pivotal.io
   - route: https://php.cfapps.haas-224.pez.pivotal.io
   instances: 1 
-
-- name: php2
-  buildpack: php_buildpack 
-  memory: 256m
-  path: .
-  routes:
-  #- route: https://php2.cfapps.haas-224.pez.pivotal.io
-  - route: https://php.cfapps.haas-224.pez.pivotal.io
-  instances: 1
