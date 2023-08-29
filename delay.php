@@ -8,6 +8,11 @@ echo "INSTANCE_INDEX: $decode->instance_index"; echo "<br/><br/>";
 #echo $_ENV["VCAP_APPLICATION"]; echo "<br/><br/>";
 #phpinfo();
 
-sleep(1)
+$i= $decode->instance_index;
+
+if ($i == 3 ){
+  echo "delaying ...";
+  sleep(10);
+}
 
 ?>

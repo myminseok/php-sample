@@ -1,9 +1,8 @@
 ---
 applications:
-- name: php1
+- name: test-php
   buildpack: php_buildpack 
   memory: 256m
+
   path: .
-  routes:
-  - route: https://php.cfapps.haas-224.pez.pivotal.io
   instances: 1 
